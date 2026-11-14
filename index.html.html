@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en-AU" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Couples Therapy Sydney | Thereconnectioninstitute</title>
+  <meta name="description" content="Evidence-based Couples Therapy Sydney at Thereconnectioninstitute. Restore emotional safety, communication, and lasting connection in Sydney CBD and online." />
+  <link rel="canonical" href="https://thereconnectioninstitute.com.au/couples-therapy-services/" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: '#142621',
+            forestDeep: '#0d1a16',
+            linen: '#f8f5ef',
+            warmStone: '#efeae0',
+            terracotta: '#b86446',
+            terracottaDark: '#994e33',
+            sage: '#4e6e63',
+            charcoal: '#1f2926'
+          },
+          fontFamily: {
+            serif: ['"Libre Baskerville"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #f8f5ef;
+      color: #1f2926;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    h1, h2, h3, h4, .font-serif {
+      font-family: 'Libre Baskerville', Georgia, serif;
+    }
+    .editorial-link {
+      color: #b86446;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+      transition: all 0.2s ease;
+    }
+    .editorial-link:hover {
+      color: #142621;
+      background-color: rgba(184, 100, 70, 0.12);
+      border-radius: 4px;
+      padding: 0 3px;
+    }
+    .article-crosslink {
+      color: #4e6e63;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-underline-offset: 4px;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+    .article-crosslink:hover {
+      color: #b86446;
+    }
+    .nav-tab.active {
+      color: #b86446;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-terracotta/20 selection:text-forest">
+
+  <!-- Sticky Navigation Header -->
+  <header class="sticky top-0 z-40 bg-linen/95 backdrop-blur-md border-b border-forest/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <button onclick="navigateTo('home')" class="flex items-center gap-3 text-left cursor-pointer group">
+        <div class="w-10 h-10 rounded-xl bg-forest text-linen flex items-center justify-center font-serif text-lg font-bold shadow-sm group-hover:bg-terracotta transition">
+          RI
+        </div>
+        <div>
+          <span class="font-serif text-lg sm:text-xl font-bold text-forest tracking-tight block leading-none">Thereconnectioninstitute</span>
+          <span class="text-[11px] uppercase tracking-widest text-sage font-semibold">Sydney Couples Counselling Practice</span>
+        </div>
+      </button>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-charcoal/80">
+        <button onclick="navigateTo('home')" id="nav-home" class="nav-tab active hover:text-terracotta transition cursor-pointer">Home</button>
+        <button onclick="navigateTo('about')" id="nav-about" class="nav-tab hover:text-terracotta transition cursor-pointer">About Us</button>
+        <button onclick="navigateTo('services')" id="nav-services" class="nav-tab hover:text-terracotta transition cursor-pointer">Services</button>
+        <button onclick="navigateTo('blog')" id="nav-blog" class="nav-tab hover:text-terracotta transition cursor-pointer">Blog</button>
+        <button onclick="navigateTo('contact')" id="nav-contact" class="nav-tab hover:text-terracotta transition cursor-pointer">Contact Us</button>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button onclick="navigateTo('contact')" class="bg-forest hover:bg-forestDeep text-linen font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full shadow transition cursor-pointer">
+          Book Consultation
+        </button>
+        <!-- Mobile Menu Toggle -->
+        <button onclick="toggleMobileMenu()" aria-label="Toggle Menu" class="md:hidden p-2.5 rounded-xl bg-warmStone text-forest hover:bg-forest/10 transition cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden bg-linen border-b border-forest/10 px-4 py-4 space-y-2">
+      <button onclick="navigateTo('home')" class="block w-full text-left px-4 py-2.5 rounded-xl text-sm font-semibold text-forest hover:bg-warmStone">Home</button>
+      <button onclick="navigateTo('about')" class="block w-full text-left px-4 py-2.5 rounded-xl text-sm font-semibold text-forest hover:bg-warmStone">About Us</button>
+      <button onclick="navigateTo('services')" class="block w-full text-left px-4 py-2.5 rounded-xl text-sm font-semibold text-forest hover:bg-warmStone">Services</button>
+      <button onclick="navigateTo('blog')" class="block w-full text-left px-4 py-2.5 rounded-xl text-sm font-semibold text-forest hover:bg-warmStone">Blog</button>
+      <button onclick="navigateTo('contact')" class="block w-full text-left px-4 py-2.5 rounded-xl text-sm font-semibold text-forest hover:bg-warmStone">Contact Us</button>
+    </div>
+  </header>
+
+  <!-- View Switcher Bar for Quick Section Focus -->
+  <div class="bg-warmStone/80 border-b border-forest/10 py-2.5 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2 text-xs">
+      <span class="text-charcoal/70 font-medium">Sydney CBD &amp; Secure Australian Telehealth Consultations</span>
+      <div class="flex items-center gap-2">
+        <span class="text-charcoal/60 hidden sm:inline">View Mode:</span>
+        <button onclick="setViewMode('all')" id="mode-all" class="px-3 py-1 rounded-full bg-forest text-linen font-semibold cursor-pointer transition">Full Experience</button>
+        <button onclick="setViewMode('focused')" id="mode-focused" class="px-3 py-1 rounded-full bg-white text-forest border border-forest/15 font-semibold cursor-pointer transition">Focused Section View</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- 1. HOME / HERO SECTION -->
+    <section id="section-home" class="page-section relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 bg-gradient-to-br from-linen via-warmStone to-linen">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-forest/10 text-forest text-xs font-semibold tracking-wider uppercase">
+              <span class="w-2 h-2 rounded-full bg-terracotta"></span>
+              Compassionate Clinical Relationship Care
+            </div>
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-[54px] font-bold text-forest leading-[1.14]">
+              Evidence-Based <span class="italic text-terracotta">Couples Therapy Sydney</span> for Lasting Connection
+            </h1>
+            <p class="text-base sm:text-lg text-charcoal/80 leading-relaxed max-w-2xl">
+              Navigate recurring conflict, emotional distance, and major life transitions with clinically proven relationship support tailored to modern Australian partnerships.
+            </p>
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a href="https://thereconnectioninstitute.com.au/couples-therapy-services/" class="bg-terracotta hover:bg-terracottaDark text-white font-semibold px-7 py-3.5 rounded-full shadow-lg transition text-center">
+                Couples Therapy Sydney
+              </a>
+              <a href="https://thereconnectioninstitute.com.au/" class="bg-forest hover:bg-forestDeep text-linen font-semibold px-7 py-3.5 rounded-full shadow transition text-center">
+                Thereconnectioninstitute
+              </a>
+            </div>
+            <div class="grid grid-cols-3 gap-6 pt-6 border-t border-forest/15 max-w-lg">
+              <div>
+                <p class="font-serif text-xl sm:text-2xl font-bold text-forest">EFT &amp; Gottman</p>
+                <p class="text-xs text-charcoal/70 mt-0.5">Research-Backed Care</p>
+              </div>
+              <div>
+                <p class="font-serif text-xl sm:text-2xl font-bold text-forest">100% Private</p>
+                <p class="text-xs text-charcoal/70 mt-0.5">Confidential Sanctuary</p>
+              </div>
+              <div>
+                <p class="font-serif text-xl sm:text-2xl font-bold text-forest">CBD &amp; Online</p>
+                <p class="text-xs text-charcoal/70 mt-0.5">Flexible Appointments</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+              <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=900&q=85" onerror="this.src='https://placehold.co/900x600/142621/f8f5ef?text=Couples+Therapy+Sydney'" alt="Couples walking peacefully together in Sydney" class="w-full h-[450px] object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-forestDeep/85 via-forestDeep/20 to-transparent flex flex-col justify-end p-7 text-linen">
+                <span class="text-xs uppercase tracking-widest text-terracotta font-bold bg-linen/95 px-3 py-1 rounded-full w-fit mb-2">Clinical Sanctuary</span>
+                <p class="font-serif text-xl font-bold leading-snug">A calm, non-judgmental space to rebuild trust, empathy, and shared direction.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT US SECTION -->
+    <section id="section-about" class="page-section py-20 bg-white border-y border-forest/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-5 order-2 lg:order-1">
+            <div class="rounded-3xl overflow-hidden shadow-lg border border-forest/10">
+              <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&w=900&q=80" onerror="this.src='https://placehold.co/900x650/efeae0/142621?text=Our+Clinical+Practice'" alt="Warm counselling consultation room" class="w-full h-[400px] object-cover" />
+            </div>
+          </div>
+          <div class="lg:col-span-7 space-y-5 order-1 lg:order-2">
+            <span class="text-xs font-bold uppercase tracking-widest text-terracotta">About Our Practice</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest leading-tight">
+              Dedicated to Thoughtful, Impartial Relationship Psychotherapy
+            </h2>
+            <p class="text-charcoal/80 leading-relaxed text-base">
+              Founded in Sydney, our practice brings together accredited relationship psychotherapists and clinical counsellors who specialise exclusively in couples dynamics, attachment repair, and intimacy wellbeing. We believe that enduring love is not the absence of friction, but the presence of emotional safety and skilful repair.
+            </p>
+            <p class="text-charcoal/80 leading-relaxed text-base">
+              Rather than taking sides or offering generic advice, our clinicians help partners map the deeper emotional cycles beneath everyday arguments. Whether you are navigating an acute breach of trust, parenting transitions, or years of quiet distance, we provide a structured path forward.
+            </p>
+            <div class="grid sm:grid-cols-2 gap-4 pt-3">
+              <div class="p-5 rounded-2xl bg-linen border border-forest/10">
+                <h3 class="font-serif text-lg font-bold text-forest mb-1">Attachment-Informed</h3>
+                <p class="text-xs text-charcoal/75 leading-relaxed">Grounded in Emotionally Focused Therapy (EFT) and contemporary relational neuroscience.</p>
+              </div>
+              <div class="p-5 rounded-2xl bg-linen border border-forest/10">
+                <h3 class="font-serif text-lg font-bold text-forest mb-1">Inclusive &amp; Respectful</h3>
+                <p class="text-xs text-charcoal/75 leading-relaxed">Welcoming married, de facto, LGBTQIA+, and culturally diverse partnerships across every life stage.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. SERVICES SECTION -->
+    <section id="section-services" class="page-section py-20 bg-linen">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs font-bold uppercase tracking-widest text-terracotta">Clinical Services</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest mt-2">
+            Tailored Support for Every Season of Partnership
+          </h2>
+          <p class="text-charcoal/75 mt-3 text-sm sm:text-base">
+            Every couple carries a unique story. Our sessions combine structured assessment with practical relational tools you can apply immediately at home.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div class="rounded-3xl overflow-hidden bg-white border border-forest/10 shadow-sm hover:shadow-md transition flex flex-col">
+            <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=800&q=80" onerror="this.src='https://placehold.co/800x450/efeae0/142621?text=Communication+Repair'" alt="Couple talking warmly together" class="w-full h-52 object-cover" />
+            <div class="p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-forest mb-2">Communication &amp; Conflict Repair</h3>
+                <p class="text-sm text-charcoal/80 leading-relaxed mb-5">
+                  Interrupt repetitive arguments, soften defensive habits, and learn physiological de-escalation techniques so difficult conversations build closeness rather than distance.
+                </p>
+              </div>
+              <button onclick="openArticle(2)" class="text-xs font-bold uppercase tracking-wider text-terracotta hover:text-forest text-left cursor-pointer">
+                Read Conflict Repair Article &rarr;
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="rounded-3xl overflow-hidden bg-white border border-forest/10 shadow-sm hover:shadow-md transition flex flex-col">
+            <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=800&q=80" onerror="this.src='https://placehold.co/800x450/efeae0/142621?text=Trust+Reconstruction'" alt="Couple holding hands in support" class="w-full h-52 object-cover" />
+            <div class="p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-forest mb-2">Infidelity &amp; Trust Reconstruction</h3>
+                <p class="text-sm text-charcoal/80 leading-relaxed mb-5">
+                  Move through the shock of secrecy or betrayal with a transparent, three-stage clinical roadmap centred on accountability, empathy, and renewed safety.
+                </p>
+              </div>
+              <button onclick="openArticle(3)" class="text-xs font-bold uppercase tracking-wider text-terracotta hover:text-forest text-left cursor-pointer">
+                Read Trust Recovery Article &rarr;
+              </button>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="rounded-3xl overflow-hidden bg-white border border-forest/10 shadow-sm hover:shadow-md transition flex flex-col">
+            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=80" onerror="this.src='https://placehold.co/800x450/efeae0/142621?text=Intimacy+and+Connection'" alt="Couple sharing a quiet moment" class="w-full h-52 object-cover" />
+            <div class="p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-forest mb-2">Intimacy, Desire &amp; Life Transitions</h3>
+                <p class="text-sm text-charcoal/80 leading-relaxed mb-5">
+                  Reignite emotional warmth and sensual vitality after parenting transitions, career burnout, or years of drifting into parallel household routines.
+                </p>
+              </div>
+              <button onclick="openArticle(4)" class="text-xs font-bold uppercase tracking-wider text-terracotta hover:text-forest text-left cursor-pointer">
+                Read Intimacy &amp; Desire Article &rarr;
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3-Step Clinical Pathway -->
+        <div class="mt-16 rounded-3xl bg-forest text-linen p-8 sm:p-12">
+          <div class="max-w-2xl mb-10">
+            <span class="text-xs font-bold uppercase tracking-widest text-terracotta">Our Therapeutic Pathway</span>
+            <h3 class="font-serif text-2xl sm:text-3xl font-bold mt-1">How Sessions Progress</h3>
+          </div>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="p-6 rounded-2xl bg-forestDeep border border-linen/10">
+              <span class="font-serif text-2xl font-bold text-terracotta">01</span>
+              <h4 class="font-serif text-lg font-bold mt-2 mb-2">Joint &amp; Individual Assessment</h4>
+              <p class="text-sm text-linen/80 leading-relaxed">We explore your shared history, individual attachment styles, and core goals in a balanced, impartial setting.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-forestDeep border border-linen/10">
+              <span class="font-serif text-2xl font-bold text-terracotta">02</span>
+              <h4 class="font-serif text-lg font-bold mt-2 mb-2">De-Escalation &amp; Emotional Safety</h4>
+              <p class="text-sm text-linen/80 leading-relaxed">Learn practical tools to interrupt reactive cycles in real time and share softer emotions without blame.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-forestDeep border border-linen/10">
+              <span class="font-serif text-2xl font-bold text-terracotta">03</span>
+              <h4 class="font-serif text-lg font-bold mt-2 mb-2">Deepening Intimacy &amp; Resilience</h4>
+              <p class="text-sm text-linen/80 leading-relaxed">Strengthen sensual closeness, daily rituals of appreciation, and long-term partnership alignment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. BLOG SECTION (LONG-FORM EDITORIAL ARTICLES WITH NATURAL INTERLINKING) -->
+    <section id="blog" class="page-section py-20 bg-white border-t border-forest/10">
+      <div id="section-blog" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-terracotta">Clinical Journal &amp; Blog</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest mt-1">
+              In-Depth Relationship Articles &amp; Perspectives
+            </h2>
+          </div>
+          <p class="text-sm text-charcoal/75 max-w-md">
+            Comprehensive editorial essays exploring attachment science, conflict repair, trust recovery, and long-term emotional intimacy.
+          </p>
+        </div>
+
+        <!-- Category Filter Pills -->
+        <div class="flex flex-wrap gap-2 mb-8">
+          <button onclick="filterArticles('All')" class="filter-btn active px-4 py-2 rounded-full text-xs font-bold bg-forest text-linen cursor-pointer transition">All Articles</button>
+          <button onclick="filterArticles('Relationship Foundations')" class="filter-btn px-4 py-2 rounded-full text-xs font-bold bg-linen text-forest hover:bg-warmStone cursor-pointer transition">Relationship Foundations</button>
+          <button onclick="filterArticles('Communication & Conflict')" class="filter-btn px-4 py-2 rounded-full text-xs font-bold bg-linen text-forest hover:bg-warmStone cursor-pointer transition">Communication &amp; Conflict</button>
+          <button onclick="filterArticles('Trust & Recovery')" class="filter-btn px-4 py-2 rounded-full text-xs font-bold bg-linen text-forest hover:bg-warmStone cursor-pointer transition">Trust &amp; Recovery</button>
+          <button onclick="filterArticles('Intimacy & Vitality')" class="filter-btn px-4 py-2 rounded-full text-xs font-bold bg-linen text-forest hover:bg-warmStone cursor-pointer transition">Intimacy &amp; Vitality</button>
+          <button onclick="filterArticles('Attachment Science')" class="filter-btn px-4 py-2 rounded-full text-xs font-bold bg-linen text-forest hover:bg-warmStone cursor-pointer transition">Attachment Science</button>
+        </div>
+
+        <!-- Articles Grid -->
+        <div id="articlesGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+      </div>
+    </section>
+
+    <!-- 5. CONTACT US SECTION -->
+    <section id="section-contact" class="page-section py-20 bg-linen border-t border-forest/10">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-10 items-start">
+          <div class="lg:col-span-5 space-y-6">
+            <span class="text-xs font-bold uppercase tracking-widest text-terracotta">Contact Us</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest leading-tight">
+              Begin a Confidential Conversation
+            </h2>
+            <p class="text-sm sm:text-base text-charcoal/80 leading-relaxed">
+              Reach out to arrange an initial consultation in our private Sydney CBD rooms or via secure online video telehealth across Australia.
+            </p>
+            <div class="space-y-4 pt-2">
+              <div class="p-5 rounded-2xl bg-white border border-forest/10">
+                <p class="text-xs font-bold uppercase tracking-wider text-terracotta">Sydney CBD Practice</p>
+                <p class="font-serif text-base font-bold text-forest mt-1">Macquarie Street Precinct, Sydney NSW 2000</p>
+                <p class="text-xs text-charcoal/70 mt-1">Monday – Saturday, 8:00 AM – 7:00 PM AEST</p>
+              </div>
+              <div class="p-5 rounded-2xl bg-white border border-forest/10">
+                <p class="text-xs font-bold uppercase tracking-wider text-terracotta">Telehealth Consultations</p>
+                <p class="font-serif text-base font-bold text-forest mt-1">Encrypted Video Sessions Australia-Wide</p>
+                <p class="text-xs text-charcoal/70 mt-1">Flexible daytime and evening appointments available</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-xl border border-forest/10">
+              <h3 class="font-serif text-2xl font-bold text-forest mb-2">Confidential Consultation Request</h3>
+              <p class="text-sm text-charcoal/75 mb-6">
+                Complete the form below and our senior intake coordinator will respond within one business day.
+              </p>
+
+              <!-- Inline Confirmation Message Box (No alert()) -->
+              <div id="contactSuccessBanner" class="hidden mb-6 p-5 rounded-2xl bg-forest text-linen space-y-1">
+                <p class="font-serif text-lg font-bold text-terracotta">Confidential Inquiry Received</p>
+                <p class="text-sm text-linen/90">Thank you for reaching out. Our Sydney intake coordinator will contact you privately within one business day.</p>
+              </div>
+
+              <form id="contactForm" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-forest mb-1.5">Your Name(s)</label>
+                    <input type="text" required placeholder="e.g., Sarah &amp; Liam" class="w-full px-4 py-3 rounded-xl bg-linen border border-forest/20 text-sm text-forest focus:outline-none focus:border-terracotta" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-forest mb-1.5">Email Address</label>
+                    <input type="email" required placeholder="you@example.com.au" class="w-full px-4 py-3 rounded-xl bg-linen border border-forest/20 text-sm text-forest focus:outline-none focus:border-terracotta" />
+                  </div>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-forest mb-1.5">Phone Number</label>
+                    <input type="tel" placeholder="0400 000 000" class="w-full px-4 py-3 rounded-xl bg-linen border border-forest/20 text-sm text-forest focus:outline-none focus:border-terracotta" />
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-forest mb-1.5">Preferred Format</label>
+                    <select class="w-full px-4 py-3 rounded-xl bg-linen border border-forest/20 text-sm text-forest focus:outline-none focus:border-terracotta">
+                      <option>Sydney CBD In-Person Session</option>
+                      <option>Secure Online Telehealth</option>
+                      <option>Intensive Half-Day Assessment</option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-forest mb-1.5">How Can We Best Support You?</label>
+                  <textarea rows="4" required placeholder="Share a brief overview of what brings you to therapy or your preferred appointment times..." class="w-full px-4 py-3 rounded-xl bg-linen border border-forest/20 text-sm text-forest focus:outline-none focus:border-terracotta"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-terracotta hover:bg-terracottaDark text-white font-semibold py-3.5 rounded-full shadow-md transition cursor-pointer">
+                  Send Confidential Inquiry
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-forestDeep text-linen py-14">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="font-serif text-xl font-bold text-white mb-3">Thereconnectioninstitute</h3>
+        <p class="text-sm text-linen/75 leading-relaxed">
+          Dedicated to evidence-based relationship psychotherapy, attachment repair, and enduring emotional connection in Sydney and across Australia.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-serif text-lg font-bold text-white mb-3">Explore Sections</h4>
+        <ul class="space-y-2 text-sm text-linen/80">
+          <li><button onclick="navigateTo('home')" class="hover:text-terracotta transition cursor-pointer">Home</button></li>
+          <li><button onclick="navigateTo('about')" class="hover:text-terracotta transition cursor-pointer">About Us</button></li>
+          <li><button onclick="navigateTo('services')" class="hover:text-terracotta transition cursor-pointer">Services</button></li>
+          <li><button onclick="navigateTo('blog')" class="hover:text-terracotta transition cursor-pointer">Blog</button></li>
+          <li><button onclick="navigateTo('contact')" class="hover:text-terracotta transition cursor-pointer">Contact Us</button></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-serif text-lg font-bold text-white mb-3">Featured Articles</h4>
+        <ul class="space-y-2 text-sm text-linen/80">
+          <li><button onclick="openArticle(1)" class="hover:text-terracotta transition cursor-pointer text-left">Rebuilding Connection &amp; Emotional Safety</button></li>
+          <li><button onclick="openArticle(2)" class="hover:text-terracotta transition cursor-pointer text-left">Mastering Emotional Attunement &amp; Repair</button></li>
+          <li><button onclick="openArticle(3)" class="hover:text-terracotta transition cursor-pointer text-left">Healing After Betrayal</button></li>
+          <li><button onclick="openArticle(4)" class="hover:text-terracotta transition cursor-pointer text-left">Reigniting Desire &amp; Physical Intimacy</button></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Full-Screen Editorial Article Reader Modal -->
+  <div id="articleModal" class="fixed inset-0 z-50 hidden bg-forestDeep/85 backdrop-blur-md overflow-y-auto">
+    <div class="min-h-screen px-4 py-8 flex justify-center">
+      <div class="bg-white max-w-4xl w-full rounded-3xl shadow-2xl overflow-hidden border border-forest/15 relative">
+        <div class="sticky top-0 z-10 bg-forest text-linen px-6 py-4 flex items-center justify-between">
+          <span id="modalBadge" class="text-xs uppercase tracking-widest text-terracotta font-bold">Clinical Journal</span>
+          <button onclick="closeArticle()" class="bg-white/15 hover:bg-white/25 text-white px-4 py-1.5 rounded-full text-xs font-bold cursor-pointer">
+            Close Article &times;
+          </button>
+        </div>
+        <div class="h-1.5 bg-warmStone w-full">
+          <div id="readingProgress" class="h-full bg-terracotta w-0 transition-all duration-150"></div>
+        </div>
+        <article id="modalArticleBody" class="p-6 sm:p-12 space-y-6 text-charcoal leading-relaxed"></article>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const articles = [
+      {
+        id: 1,
+        category: "Relationship Foundations",
+        readTime: "10 min read",
+        image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1000&q=80",
+        title: "Rebuilding Connection & Emotional Safety: A Clinical Guide to Modern Couples Therapy",
+        excerpt: "How evidence-based attachment therapy and structured communication rituals transform recurring conflict into lasting partnership resilience.",
+        paragraphs: [
+          "Every committed partnership inevitably encounters seasons of friction, emotional distance, and communication breakdown. In a fast-paced metropolis like Sydney, where demanding careers, financial pressures, parenting responsibilities, and constant digital distractions compete for our finite energy, even deeply devoted partners can find themselves drifting into parallel lives. Engaging in evidence-based <a href='https://thereconnectioninstitute.com.au/couples-therapy-services/' class='editorial-link'>Couples Therapy Sydney</a> at <a href='https://thereconnectioninstitute.com.au/' class='editorial-link'>Thereconnectioninstitute</a> provides couples with a structured, psychologically safe sanctuary to slow down, dismantle destructive conflict cycles, and rebuild enduring emotional intimacy.",
+          "Many couples hesitate to seek professional relationship counselling until resentment has hardened into chronic withdrawal or explosive arguments. Yet contemporary relationship science demonstrates that distress rarely stems from a lack of love; rather, it arises from unexamined attachment triggers and rigid protective patterns. When one partner feels unheard or criticized, they may pursue connection through protest or urgency, while the other partner—feeling overwhelmed or inadequate—instinctively retreats into silence or defensiveness. Over time, this pursue-withdraw dance erodes mutual trust and leaves both individuals feeling profoundly lonely inside their own home.",
+          "At our Sydney practice, clinical interventions are grounded in the gold-standard frameworks of Emotionally Focused Therapy (EFT), the Gottman Method, and psychodynamic relational systems. Rather than acting as a referee who assigns blame or declares a winner, your therapist maps the underlying emotional architecture of your dynamic. You learn to recognize that your partner is not the enemy; the repetitive negative cycle itself is the adversary. By identifying the softer, primary emotions—such as fear of abandonment, grief, or longing for reassurance—that hide beneath anger or emotional shutdown, couples begin to speak to each other from a place of vulnerability rather than self-protection.",
+          "A foundational pillar of lasting relationship repair is establishing rigorous emotional and nervous system safety. Neuroscience reveals that when a conflict escalates, the human amygdala triggers a physiological fight-or-flight response, flooding the body with adrenaline and cortisol. In this state of diffuse physiological arousal, empathy, active listening, and creative problem-solving become biologically inaccessible. During sessions, couples practice concrete co-regulation techniques, structured de-escalation rituals, and intentional repair attempts so that difficult conversations can remain productive without inflicting lasting relational wounds.",
+          "In contemporary clinical practice across Sydney, one of the most profound turning points occurs when partners shift away from silent scorekeeping toward shared stewardship of their relational space. Scorekeeping—mentally cataloguing who initiated affection last, who carried a heavier domestic or parenting load, or who extended the first olive branch after a disagreement—is an understandable self-protective reflex when someone feels chronically unseen. Yet transactional accounting inevitably starves a partnership of warmth and spontaneity. Within structured therapy sessions, couples gently bring unspoken expectations and invisible emotional labor into the light, replacing resentment-inducing assumptions with explicit, compassionate agreements that honour both individuals' capacities, nervous systems, and core values.",
+          "Modern couples also frequently underestimate how severely external stressors spill over into their domestic sanctuary. Demanding professional schedules across Sydney's corporate, medical, legal, creative, and entrepreneurial landscapes often leave both partners neurologically depleted by the time they close the front door each evening. When chronic workplace hypervigilance goes unaddressed, partners can misinterpret exhaustion or sensory overload as personal indifference or rejection. Establishing intentional decompression rituals—such as a protected twenty-minute evening check-in where each partner shares the emotional residue of their day while the other listens with empathy rather than unsolicited problem-solving—creates a vital buffer between outside pressures and intimate connection.",
+          "Beyond crisis resolution, structured couples therapy equips partners with a shared language for navigating life's major transitions. Whether adjusting to the arrival of a first child, blending families, managing extended family boundaries, or recalibrating career ambitions, every developmental milestone requires a conscious renegotiation of the relationship agreement. When couples learn how to hold space for differing perspectives without invalidating one another, disagreements transform from threats into opportunities for deeper mutual understanding. For couples seeking to strengthen their daily dialogue, our companion essay on <span class='article-crosslink' onclick='openArticle(2)'>Mastering Emotional Attunement and Conflict Repair in Long-Term Partnerships</span> explores practical communication rituals that foster daily connection.",
+          "Longitudinal research into relationship stability consistently highlights the protective power of a daily culture of appreciation, fondness, and admiration. Thriving couples do not avoid friction; rather, they maintain a deliberate habit of noticing and voicing gratitude for small, everyday gestures of care. Whether acknowledging a thoughtful text message during a hectic afternoon, sharing a quiet cup of tea before the household wakes, or expressing genuine admiration for how a partner handled a difficult parenting moment, these micro-moments build a deep reservoir of goodwill. When inevitable misunderstandings arise, this emotional bank account allows both partners to extend the benefit of the doubt rather than assuming hostile intent.",
+          "Intimacy in long-term relationships also encompasses physical affection, sensual curiosity, and erotic vitality. When emotional disconnection lingers, physical intimacy is often the first casualty, creating a secondary layer of shame, rejection, and avoidance. Integrating relational psychotherapy with somatic awareness allows partners to address desire discrepancies and unspoken vulnerabilities with compassion. Reading <span class='article-crosslink' onclick='openArticle(4)'>Reigniting Desire and Physical Intimacy After Years of Routine</span> offers deeper insight into how emotional safety directly unlocks responsive desire and shared pleasure.",
+          "For partnerships shaken by secrecy, emotional affairs, or breaches of trust, the path forward requires a dedicated, transparent recovery framework. Healing from betrayal cannot be rushed through premature forgiveness or swept under the rug; it demands structured accountability, consistent empathy for the injured partner's trauma responses, and a gradual reconstruction of reliability. Couples navigating this painful terrain can read more in <span class='article-crosslink' onclick='openArticle(3)'>Healing After Betrayal: A Clinical Roadmap to Rebuilding Relational Trust</span>, which outlines the three essential stages of post-infidelity recovery.",
+          "Equally important is recognizing how individual attachment histories shape present-day marital dynamics. Each partner brings into the relationship an implicit blueprint of how closeness, conflict, and dependency were modeled in early life. Anxiously attached partners often monitor subtle shifts in tone for signs of rejection, whereas avoidantly attached partners may equate emotional closeness with a loss of autonomy. Understanding these attachment styles—explored thoroughly in <span class='article-crosslink' onclick='openArticle(5)'>Attachment Styles in Marriage: Breaking Anxious-Avoidant Loops</span>—empowers couples to respond to each other's triggers with curiosity and reassurance rather than reactive defensiveness.",
+          "Inherited family-of-origin scripts and cultural narratives also exert a subtle yet powerful influence on how each partner defines closeness, autonomy, and fair conflict. One person may have grown up in a household where vigorous, expressive debate was routine and quickly resolved over dinner, whereas their partner may come from an environment where raised voices signaled danger, instability, or impending abandonment. Without a neutral clinical space to translate these differing emotional languages, normal stylistic differences get misread as disrespect or coldness. Bringing these unspoken blueprints into conscious awareness frees couples to co-author a relational culture that feels safe and authentic to both.",
+          "True relational maturity ultimately rests on holding space for both deep togetherness and healthy individuality. Vibrant, sustainable intimacy never demands the erasure of separate friendships, personal creative pursuits, or distinct perspectives; instead, it flourishes when two grounded, self-aware individuals consciously choose to turn toward one another with generosity and respect. As partners strengthen their capacity for individual emotional regulation alongside mutual co-regulation, they cultivate a partnership capable of weathering life's unexpected storms with grace, humour, and enduring devotion."
+        ]
+      },
+      {
+        id: 2,
+        category: "Communication & Conflict",
+        readTime: "10 min read",
+        image: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=1000&q=80",
+        title: "Mastering Emotional Attunement and Conflict Repair in Long-Term Partnerships",
+        excerpt: "Practical psychological tools for de-escalating heated arguments, listening beyond defensiveness, and turning toward bids for connection.",
+        paragraphs: [
+          "Conflict in a committed relationship is not a sign of incompatibility; it is an inevitable byproduct of two distinct human beings sharing a life, values, and daily decisions. What separates thriving partnerships from distressed ones is not the absence of disagreement, but the speed and grace with which partners repair emotional ruptures. Through specialized <a href='https://thereconnectioninstitute.com.au/couples-therapy-services/' class='editorial-link'>Couples Therapy Sydney</a> at <a href='https://thereconnectioninstitute.com.au/' class='editorial-link'>Thereconnectioninstitute</a>, couples learn to replace criticism, contempt, defensiveness, and stonewalling with clear, non-defensive emotional expression.",
+          "Most arguments escalate not because of the surface topic—whether finances, household chores, or parenting schedules—but because of the hidden relational question underneath: whether each partner truly matters and can be counted on during moments of vulnerability. When partners debate logistics for hours without addressing this underlying attachment longing, they remain trapped in exhausting circular arguments that leave both feeling defeated and misunderstood.",
+          "Emotional attunement begins with slowing down the conversational pace and shifting from reactive rebuttal to curious inquiry. When one partner shares a hurt using softened start-ups—focusing on their own internal feeling state rather than character critique—the listening partner is far less likely to raise a defensive shield. This foundational conversational shift echoes the core relational principles explored in <span class='article-crosslink' onclick='openArticle(1)'>Rebuilding Connection &amp; Emotional Safety: A Clinical Guide to Modern Couples Therapy</span>.",
+          "Equally vital is recognizing the physiological threshold of emotional flooding. When heart rates rise above one hundred beats per minute during an argument, the prefrontal cortex goes offline and genuine empathy becomes biologically impossible. Establishing a pre-agreed twenty-minute self-soothing pause—paired with a clear, reassuring commitment to return to the conversation once both nervous systems have settled—prevents harsh words from inflicting lasting damage.",
+          "Partners also benefit enormously from learning to recognize and turn toward subtle daily bids for connection. A bid may be as simple as pointing out a bird outside the window, sighing after reading an email, or asking a brief question about the upcoming weekend. Research demonstrates that couples who consistently turn toward these small invitations build a resilient buffer of trust that makes navigating major disagreements dramatically easier.",
+          "Another essential dimension of clinical work involves helping couples distinguish between solvable problems and perpetual differences. Research across thousands of long-term relationships reveals that roughly two-thirds of marital disagreements revolve around enduring personality or lifestyle differences—such as differing preferences for spontaneity versus structure, social engagement versus quiet solitude, or varying risk tolerances. Rather than exhausting themselves trying to eliminate every difference, successful couples learn to dialogue around perpetual issues with warmth, humour, and mutual respect.",
+          "Digital boundaries and modern attention habits also warrant deliberate clinical attention. Constant notifications, late-night email checking, and passive screen scrolling quietly siphon away the unhurried presence that intimacy requires to breathe. Establishing shared device-free sanctuaries—such as during evening meals, the final hour before sleep, and dedicated weekend mornings—sends an unmistakable neurological signal that your partner takes priority over digital demands.",
+          "Practising structured speaker-listener dialogues during calm moments of the week trains couples to stay grounded when high-stakes topics inevitably arise. By summarizing what a partner has shared and validating the logic of their emotional perspective before offering a counterpoint, both individuals experience the profound relief of feeling genuinely understood, even when compromises still need to be negotiated.",
+          "Over time, mastering conflict repair strengthens every dimension of partnership, creating the emotional safety required for physical closeness as explored in <span class='article-crosslink' onclick='openArticle(4)'>Reigniting Desire and Physical Intimacy After Years of Routine</span> and deeper trust recovery in <span class='article-crosslink' onclick='openArticle(3)'>Healing After Betrayal: A Clinical Roadmap to Rebuilding Relational Trust</span>. Understanding underlying attachment triggers—detailed in <span class='article-crosslink' onclick='openArticle(5)'>Attachment Styles in Marriage: Breaking Anxious-Avoidant Loops</span>—further equips couples to catch defensive habits early and choose connection instead.",
+          "Finally, cultivating realistic, compassionate expectations of long-term love protects relationships from unnecessary disillusionment. Popular culture often portrays lasting romance as effortless perpetual euphoria, leaving real-world couples feeling defective when normal seasons of fatigue or friction arrive. In truth, resilient love is an active, evolving craft built through thousands of conscious choices to listen, repair, forgive, and remain curious about the person beside you."
+        ]
+      },
+      {
+        id: 3,
+        category: "Trust & Recovery",
+        readTime: "10 min read",
+        image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=1000&q=80",
+        title: "Healing After Betrayal: A Clinical Roadmap to Rebuilding Relational Trust",
+        excerpt: "A structured, compassionate three-phase clinical pathway for couples navigating infidelity, secrecy, or profound breaches of trust.",
+        paragraphs: [
+          "Discovering an emotional affair, physical infidelity, or prolonged financial and digital secrecy shatters a partner's fundamental sense of reality and safety. In the immediate aftermath, the injured partner frequently experiences acute relational trauma symptoms—including intrusive thoughts, hypervigilance, sleep disruption, and oscillating waves of grief and rage. Engaging in structured <a href='https://thereconnectioninstitute.com.au/couples-therapy-services/' class='editorial-link'>Couples Therapy Sydney</a> with <a href='https://thereconnectioninstitute.com.au/' class='editorial-link'>Thereconnectioninstitute</a> provides an essential clinical container to stabilize the crisis and guide both partners through a rigorous recovery process.",
+          "Clinical infidelity recovery unfolds across three distinct stages: Atonement, Attunement, and Attachment. During the initial Atonement phase, the partner who broke trust must demonstrate radical transparency, end all contact with third parties, and tolerate the injured partner's pain without becoming defensive or demanding premature closure. Minimizing the betrayal, trickle-truthing, or withholding details only prolongs the trauma and prevents the nervous system from settling.",
+          "Navigating the repetitive questions of the injured partner requires extraordinary patience and emotional maturity. When someone has experienced a relational shock, their mind repeatedly revisits details in an effort to make sense of a shattered worldview and ensure they will never be blindsided again. When the involved partner responds with consistent honesty, accountability, and genuine remorse rather than irritation, the intensity of intrusive questioning gradually subsides.",
+          "As acute crisis stabilizes, couples enter the Attunement phase, examining the vulnerabilities, boundary erosions, and unaddressed emotional disconnects that preceded the rupture—without ever using those factors to excuse the breach of trust. Integrating the communication frameworks from <span class='article-crosslink' onclick='openArticle(2)'>Mastering Emotional Attunement and Conflict Repair in Long-Term Partnerships</span> allows partners to hold painful truths with empathy and clarity.",
+          "In the final Attachment phase, couples consciously construct a new relationship agreement characterized by higher honesty, stronger boundaries, and deeper emotional intimacy than existed before the crisis. Insights from <span class='article-crosslink' onclick='openArticle(5)'>Attachment Styles in Marriage: Breaking Anxious-Avoidant Loops</span> further assist partners in understanding how fear of vulnerability can drive avoidance or secrecy, empowering them to build enduring trustworthiness.",
+          "Rebuilding physical and sensual closeness after betrayal must also proceed at the injured partner's pace, honouring bodily autonomy and emotional readiness as discussed in <span class='article-crosslink' onclick='openArticle(4)'>Reigniting Desire and Physical Intimacy After Years of Routine</span> and grounded in the safety principles of <span class='article-crosslink' onclick='openArticle(1)'>Rebuilding Connection &amp; Emotional Safety: A Clinical Guide to Modern Couples Therapy</span>.",
+          "Meaningful therapeutic transformation is sustained primarily by what couples practice between appointments rather than what happens inside the consulting room alone. Consistent check-ins, transparent boundaries around digital communication, and willingness to sit with discomfort allow reliability to take root again.",
+          "With dedicated clinical guidance, many couples discover that the relationship they rebuild after betrayal is far more honest, emotionally intimate, and resilient than the fragile status quo that existed prior to the rupture. True trust is never restored overnight, yet through thousands of small, consistent acts of integrity, safety can be earned anew."
+        ]
+      },
+      {
+        id: 4,
+        category: "Intimacy & Vitality",
+        readTime: "10 min read",
+        image: "https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=1000&q=80",
+        title: "Reigniting Desire and Physical Intimacy After Years of Routine",
+        excerpt: "How understanding responsive desire, eliminating bedroom pressure, and cultivating emotional safety restore sensual connection.",
+        paragraphs: [
+          "In long-term relationships, it is remarkably common for one or both partners to notice a gradual fading of erotic spontaneity. As domestic obligations, parenting fatigue, and work stress accumulate, physical affection can quietly shrink to a rushed goodnight kiss, leaving partners feeling more like efficient co-managers of a household than romantic lovers. Through supportive <a href='https://thereconnectioninstitute.com.au/couples-therapy-services/' class='editorial-link'>Couples Therapy Sydney</a> at <a href='https://thereconnectioninstitute.com.au/' class='editorial-link'>Thereconnectioninstitute</a>, couples learn to dismantle shame around desire discrepancies and cultivate authentic sensual vitality.",
+          "Contemporary sexology distinguishes between spontaneous desire—which often characterizes early infatuation—and responsive desire, which emerges gradually in response to emotional safety, affectionate touch, and unhurried presence. When partners mistake the natural transition to responsive desire for a loss of attraction or personal rejection, anxiety and avoidance quickly take root in the relationship.",
+          "In many partnerships, a predictable polarization develops between the higher-desire partner, who seeks physical closeness to feel loved and reassured, and the lower-desire partner, who begins to feel pressured and retreats even further. Breaking this cycle requires removing performance expectations and creating contexts where sensual touch is enjoyed for pleasure and connection rather than solely as a prelude to intercourse.",
+          "Restoring physical intimacy begins outside the bedroom by rebuilding non-sexual affection and emotional safety, principles explored in <span class='article-crosslink' onclick='openArticle(1)'>Rebuilding Connection &amp; Emotional Safety: A Clinical Guide to Modern Couples Therapy</span>. When everyday hugs, hand-holding, and affectionate kisses return without hidden agendas, nervous systems relax and curiosity naturally reawakens.",
+          "Open, shame-free dialogue about preferences, stressors, and boundaries—supported by the conversational tools in <span class='article-crosslink' onclick='openArticle(2)'>Mastering Emotional Attunement and Conflict Repair in Long-Term Partnerships</span>—enables couples to co-create an intimate life that evolves joyfully across every decade of partnership.",
+          "Understanding how anxious and avoidant attachment patterns influence vulnerability in the bedroom—explored in <span class='article-crosslink' onclick='openArticle(5)'>Attachment Styles in Marriage: Breaking Anxious-Avoidant Loops</span>—as well as protecting relational trust as outlined in <span class='article-crosslink' onclick='openArticle(3)'>Healing After Betrayal: A Clinical Roadmap to Rebuilding Relational Trust</span>, ensures that physical intimacy remains anchored in deep emotional attunement.",
+          "Ultimately, thriving long-term intimacy is not about recapturing the effortless chemistry of the first few months together; it is about cultivating a richer, more intentional erotic connection rooted in mutual trust, playfulness, and deep familiarity with one another's hearts and bodies."
+        ]
+      },
+      {
+        id: 5,
+        category: "Attachment Science",
+        readTime: "10 min read",
+        image: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1000&q=80",
+        title: "Attachment Styles in Marriage: Breaking Anxious-Avoidant Loops",
+        excerpt: "Understanding how early relational blueprints drive modern marital friction and how couples cultivate earned secure attachment together.",
+        paragraphs: [
+          "Adult attachment theory provides one of the clearest lenses for understanding why loving couples get trapped in repetitive emotional gridlock. Every person enters marriage with deeply ingrained expectations regarding emotional availability, conflict resolution, and independence. At <a href='https://thereconnectioninstitute.com.au/' class='editorial-link'>Thereconnectioninstitute</a>, our specialized <a href='https://thereconnectioninstitute.com.au/couples-therapy-services/' class='editorial-link'>Couples Therapy Sydney</a> helps partners decode these invisible blueprints and build earned security together.",
+          "The most common relational polarity occurs between anxious and avoidant attachment strategies. When stressed, an anxiously attached partner seeks immediate reassurance and closeness, often expressing distress through heightened urgency or protest. Conversely, an avoidantly attached partner experiences that urgency as criticism or engulfment, retreating inward to restore internal calm. The more one pursues, the more the other withdraws—confirming each partner's deepest fear.",
+          "Within clinical sessions, partners learn to view these protective strategies with compassion rather than judgment. Both anxious pursuit and avoidant withdrawal originated as intelligent adaptations to early relational environments where emotional safety felt uncertain. Recognizing that both partners are longing for connection—even when their surface behaviours look opposite—transforms blame into mutual empathy.",
+          "Breaking this loop requires both partners to step out of reactive self-protection and name the vulnerable emotion underneath. When the pursuing partner expresses fear of disconnection softly, and the withdrawing partner stays present rather than shutting down, the cycle loses its power. These attachment shifts reinforce the foundational work detailed in <span class='article-crosslink' onclick='openArticle(1)'>Rebuilding Connection &amp; Emotional Safety: A Clinical Guide to Modern Couples Therapy</span> and the repair rituals in <span class='article-crosslink' onclick='openArticle(2)'>Mastering Emotional Attunement and Conflict Repair in Long-Term Partnerships</span>.",
+          "By practising consistent emotional responsiveness, couples gradually rewire old relational wounds, creating a secure base that supports both deep intimacy—as discussed in <span class='article-crosslink' onclick='openArticle(4)'>Reigniting Desire and Physical Intimacy After Years of Routine</span>—and resilient trust recovery in <span class='article-crosslink' onclick='openArticle(3)'>Healing After Betrayal: A Clinical Roadmap to Rebuilding Relational Trust</span>.",
+          "Earned secure attachment is one of the greatest gifts two adults can build together. Even if neither partner experienced consistent emotional attunement in childhood, conscious clinical work empowers couples to become a safe haven for each other—proving that our relational future is never permanently dictated by our past."
+        ]
+      }
+    ];
+
+    let currentFilter = 'All';
+    let viewMode = 'all';
+    let activeSection = 'home';
+
+    function renderArticles() {
+      const grid = document.getElementById('articlesGrid');
+      const filtered = currentFilter === 'All'
+        ? articles
+        : articles.filter(a => a.category === currentFilter);
+
+      grid.innerHTML = filtered.map(art => `
+        <div class="rounded-3xl overflow-hidden bg-linen border border-forest/10 flex flex-col justify-between shadow-sm hover:shadow-md transition">
+          <div>
+            <img src="${art.image}" onerror="this.src='https://placehold.co/800x450/efeae0/142621?text=Clinical+Article'" alt="${art.title}" class="w-full h-48 object-cover" />
+            <div class="p-7 pb-4">
+              <div class="flex items-center justify-between text-xs font-semibold text-terracotta mb-2.5">
+                <span>${art.category}</span>
+                <span class="text-charcoal/55">${art.readTime}</span>
+              </div>
+              <h3 class="font-serif text-xl font-bold text-forest leading-snug mb-3">${art.title}</h3>
+              <p class="text-sm text-charcoal/75 leading-relaxed">${art.excerpt}</p>
+            </div>
+          </div>
+          <div class="px-7 pb-7 pt-2">
+            <button onclick="openArticle(${art.id})" class="w-full py-3 rounded-full bg-forest hover:bg-terracotta text-linen font-semibold text-xs uppercase tracking-wider transition cursor-pointer">
+              Read Full Article &rarr;
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterArticles(category) {
+      currentFilter = category;
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        if (btn.textContent.trim().replace('&', '&amp;') === category || btn.textContent.trim() === category) {
+          btn.classList.remove('bg-linen', 'text-forest');
+          btn.classList.add('bg-forest', 'text-linen');
+        } else {
+          btn.classList.remove('bg-forest', 'text-linen');
+          btn.classList.add('bg-linen', 'text-forest');
+        }
+      });
+      renderArticles();
+    }
+
+    function openArticle(id) {
+      const art = articles.find(a => a.id === id);
+      if (!art) return;
+
+      document.getElementById('modalBadge').textContent = `${art.category} • ${art.readTime}`;
+      const relatedLinks = articles
+        .filter(a => a.id !== id)
+        .map(a => `
+          <button onclick="openArticle(${a.id})" class="text-left p-4 rounded-2xl bg-linen border border-forest/10 hover:border-terracotta transition cursor-pointer">
+            <span class="text-[11px] font-bold uppercase text-terracotta block mb-1">${a.category}</span>
+            <span class="font-serif text-base font-bold text-forest leading-snug block">${a.title}</span>
+          </button>
+        `)
+        .join('');
+
+      document.getElementById('modalArticleBody').innerHTML = `
+        <img src="${art.image}" onerror="this.src='https://placehold.co/1000x500/efeae0/142621?text=Clinical+Journal'" alt="${art.title}" class="w-full h-64 sm:h-80 object-cover rounded-2xl" />
+        <h1 class="font-serif text-2xl sm:text-4xl font-bold text-forest leading-tight">${art.title}</h1>
+        <div class="space-y-5 text-base text-charcoal/85 leading-relaxed">
+          ${art.paragraphs.map(p => `<p>${p}</p>`).join('')}
+        </div>
+        <div class="pt-8 mt-8 border-t border-forest/15">
+          <h4 class="font-serif text-xl font-bold text-forest mb-4">Continue Reading</h4>
+          <div class="grid sm:grid-cols-2 gap-3">${relatedLinks}</div>
+        </div>
+      `;
+
+      const modal = document.getElementById('articleModal');
+      modal.classList.remove('hidden');
+      modal.scrollTop = 0;
+      document.getElementById('readingProgress').style.width = '0%';
+    }
+
+    function closeArticle() {
+      document.getElementById('articleModal').classList.add('hidden');
+    }
+
+    document.getElementById('articleModal').addEventListener('scroll', function() {
+      const el = this;
+      const maxScroll = el.scrollHeight - el.clientHeight;
+      const pct = maxScroll > 0 ? (el.scrollTop / maxScroll) * 100 : 0;
+      document.getElementById('readingProgress').style.width = Math.min(100, Math.max(0, pct)) + '%';
+    });
+
+    function navigateTo(sectionKey) {
+      activeSection = sectionKey;
+      document.getElementById('mobileMenu').classList.add('hidden');
+
+      document.querySelectorAll('.nav-tab').forEach(tab => tab.classList.remove('active'));
+      document.getElementById(`nav-${sectionKey}`)?.classList.add('active');
+
+      if (viewMode === 'focused') {
+        document.querySelectorAll('.page-section').forEach(sec => sec.classList.add('hidden'));
+        document.getElementById(`section-${sectionKey}`)?.classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        document.querySelectorAll('.page-section').forEach(sec => sec.classList.remove('hidden'));
+        document.getElementById(`section-${sectionKey}`)?.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+
+    function setViewMode(mode) {
+      viewMode = mode;
+      const btnAll = document.getElementById('mode-all');
+      const btnFocused = document.getElementById('mode-focused');
+
+      if (mode === 'all') {
+        btnAll.className = 'px-3 py-1 rounded-full bg-forest text-linen font-semibold cursor-pointer transition';
+        btnFocused.className = 'px-3 py-1 rounded-full bg-white text-forest border border-forest/15 font-semibold cursor-pointer transition';
+        document.querySelectorAll('.page-section').forEach(sec => sec.classList.remove('hidden'));
+      } else {
+        btnFocused.className = 'px-3 py-1 rounded-full bg-forest text-linen font-semibold cursor-pointer transition';
+        btnAll.className = 'px-3 py-1 rounded-full bg-white text-forest border border-forest/15 font-semibold cursor-pointer transition';
+        navigateTo(activeSection);
+      }
+    }
+
+    function toggleMobileMenu() {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      document.getElementById('contactSuccessBanner').classList.remove('hidden');
+      e.target.reset();
+    }
+
+    renderArticles();
+  </script>
+</body>
+</html>
